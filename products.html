@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trusiqq - Products</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      color: #333;
+    }
+    header, footer {
+      background: #f3d1bf;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      background: #fff0e5;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #8a4b38;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 0.5rem 0;
+      color: #8a4b38;
+    }
+    .product-card p {
+      margin: 0.25rem 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #6e3b2b;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trusiqq</h1>
+    <p>Crafted Toppers & Delightful Bakery Magic</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="index.html#order">Order</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x150?text=Cake+Topper" alt="Custom Cake Topper" />
+        <h3>Custom Cake Topper</h3>
+        <p>Personalized cake toppers for any occasion.</p>
+        <p class="price">Starting at ₹99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x150?text=Designer+Cake" alt="Designer Cake" />
+        <h3>Designer Cake</h3>
+        <p>Made-to-order with premium ingredients. Egg & eggless options.</p>
+        <p class="price">From ₹599</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x150?text=Gift+Boxes" alt="Packaging & Gift Boxes" />
+        <h3>Packaging & Gift Boxes</h3>
+        <p>Perfect for events, returns & festive gifting.</p>
+        <p class="price">Starting at ₹199</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trusiqq. All rights reserved.</p>
+  </footer>
+</body>
+</html>
