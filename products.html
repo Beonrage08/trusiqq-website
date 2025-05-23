@@ -4,72 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trusiqq - Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff8f0;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
+      background: #fffdf9;
       color: #333;
     }
     header, footer {
-      background: #f3d1bf;
+      background: #ffe0d4;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
     }
     nav {
-      background: #fff0e5;
+      background: #fff3eb;
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem 0;
+      border-bottom: 1px solid #eee;
     }
     nav a {
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       color: #8a4b38;
+      transition: color 0.3s ease;
     }
-    section {
-      max-width: 900px;
+    nav a:hover {
+      color: #cc6f4d;
+    }
+    .products {
+      max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1rem;
-    }
-    .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
-    .product-card {
+    .product {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 1rem;
-      text-align: center;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      height: 150px;
-      object-fit: cover;
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
-    .product-card h3 {
-      margin: 0.5rem 0;
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .product h3 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.2rem;
       color: #8a4b38;
     }
-    .product-card p {
-      margin: 0.25rem 0;
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.5rem;
     }
     .price {
       font-weight: bold;
-      color: #6e3b2b;
-      margin-top: 0.5rem;
+      color: #cc6f4d;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #8a4b38;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #6e3b2b;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Trusiqq</h1>
-    <p>Crafted Toppers & Delightful Bakery Magic</p>
+    <h1>Our Products</h1>
+    <p>Explore the unique creations from Trusiqq</p>
   </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
@@ -77,32 +101,29 @@
     <a href="index.html#contact">Contact</a>
   </nav>
 
-  <section>
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x150?text=Cake+Topper" alt="Custom Cake Topper" />
-        <h3>Custom Cake Topper</h3>
-        <p>Personalized cake toppers for any occasion.</p>
-        <p class="price">Starting at ₹99</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x150?text=Designer+Cake" alt="Designer Cake" />
-        <h3>Designer Cake</h3>
-        <p>Made-to-order with premium ingredients. Egg & eggless options.</p>
-        <p class="price">From ₹599</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x150?text=Gift+Boxes" alt="Packaging & Gift Boxes" />
-        <h3>Packaging & Gift Boxes</h3>
-        <p>Perfect for events, returns & festive gifting.</p>
-        <p class="price">Starting at ₹199</p>
-      </div>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Topper+1" alt="Product 1" />
+      <h3>Elegant Name Topper</h3>
+      <p>Custom acrylic topper perfect for birthdays or anniversaries.</p>
+      <p class="price">₹199</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Topper+2" alt="Product 2" />
+      <h3>Golden Theme Topper</h3>
+      <p>Shiny gold finish for extra glam! Fully personalized.</p>
+      <p class="price">₹249</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Topper+3" alt="Product 3" />
+      <h3>Photo Cake Topper</h3>
+      <p>Your favorite photo + beautiful design = unforgettable moment.</p>
+      <p class="price">₹299</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Trusiqq. All rights reserved.</p>
+    <p>&copy; 2025 Trusiqq. Made with love and sprinkles.</p>
   </footer>
 </body>
 </html>
